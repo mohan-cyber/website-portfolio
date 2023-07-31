@@ -9,15 +9,18 @@ const Portfolio = () => {
     const portfolios = [
         {
             id: 1,
-            src: Docker
+            src: Docker,
+            link: 'https://github.com/mohan-cyber/Docker-container-django-react'
         },
         {
             id: 1,
-            src: Sso
+            src: Sso,
+            link: 'https://github.com/mohan-cyber/django-sigle-sign-on-authentication'
         },
         {
             id: 1,
-            src: Stripe
+            src: Stripe,
+            link: 'https://github.com/mohan-cyber/Stripe-Payment-Integration'
         }
     ]
   return (
@@ -32,22 +35,22 @@ const Portfolio = () => {
            </div>
            <div className=' grid sm:grid-cols-2 md:grid-cols-3 gap-8'>
            {
-               portfolios.map(({ id, src}) => (
+               portfolios.map(({ id, src, link}) => (
 
             
         
         
-            <div  key={id} className='shadow-md shadow-gray-600 rounded-lg'>
+            <div  key={id} className='shadow-md shadow-gray-600 rounded-lg flex flex-col justify-center items-center'>
                 <img src={src} alt="" className=' rounder-md duration-200 hover:scale-105 w-full' />
-                <div className=' flex justify-center items-center'>
+                <div className=' flex justify-center items-center divide divide-x-2 mt-auto divide-gray-600'>
                     <button className=' w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>
                         Demo
 
                     </button>
-                    <button className=' w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>
+                    <a href={link} className=' w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>
                         Code
 
-                    </button>
+                    </a>
                 </div>
 
             </div>
