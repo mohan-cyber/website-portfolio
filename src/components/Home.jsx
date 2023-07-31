@@ -9,10 +9,7 @@ const Home = () => {
         <div className="flex flex-col justify-center h-full"> 
           <h2 className=" text-4xl md:text-5xl font-bold ">I'm a Full Stack Developer</h2>
           <p className=" text-white py-4 max-w-md ">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate,
-            ipsam voluptatem, sed laborum architecto explicabo iure voluptatum
-            nemo, accusamus repellat deleniti dignissimos aut quae unde rerum!
-            Recusandae quam laboriosam incidunt?
+          I have 2.5 years of experience in my domain. My objective is to obtain a challenging position in a high-quality environment where my academic skills and practical expertise will add value to organization.
           </p>
           <div>
           <Link to="portfolio" smooth duration={500} spy={true} offset={-70}>
