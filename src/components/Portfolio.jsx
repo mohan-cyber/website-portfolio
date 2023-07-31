@@ -44,7 +44,7 @@ const Portfolio = () => {
                 <img src={src} alt="" className=' rounder-md duration-200 hover:scale-105 w-full h-full' />
                 <div className='flex justify-center items-center  w-full divide divide-x-2  divide-gray-600'>
                 <div className=' flex justify-center items-center  w-full px-6 py-4 '>
-                    <a href="" className='duration-200 hover:scale-105'>
+                    <a href="/" className='duration-200 hover:scale-105'>
                         Demo
 
                     </a>
