@@ -40,17 +40,22 @@ const Portfolio = () => {
             
         
         
-            <div  key={id} className='shadow-md shadow-gray-600 rounded-lg flex flex-col justify-center items-center'>
-                <img src={src} alt="" className=' rounder-md duration-200 hover:scale-105 w-full' />
-                <div className=' flex justify-center items-center divide divide-x-2 mt-auto divide-gray-600'>
-                    <button className=' w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>
+            <div  key={id} className=' shadow-md shadow-gray-600 rounded-lg flex flex-col justify-center items-center'>
+                <img src={src} alt="" className=' rounder-md duration-200 hover:scale-105 w-full h-full' />
+                <div className='flex justify-center items-center  w-full divide divide-x-2  divide-gray-600'>
+                <div className=' flex justify-center items-center  w-full px-6 py-4 '>
+                    <a href="" className='duration-200 hover:scale-105'>
                         Demo
 
-                    </button>
-                    <a href={link} className=' w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>
+                    </a>
+                    </div>
+                   
+                    <div className=' flex justify-center items-center  w-full px-6 py-4'>
+                    <a href={link} className='duration-200 hover:scale-105'>
                         Code
 
                     </a>
+                    </div>
                 </div>
 
             </div>
