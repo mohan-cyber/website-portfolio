@@ -33,7 +33,7 @@ const About = () => {
     <strong>Technical Proficiencies:</strong>
   </p>
   <ul class="list-disc ml-6 mb-4">
-    <li>Programming Languages: Python, JavaScript, TypeScript</li>
+    <li>Programming Languages: Python, TypeScript</li>
     <li>Backend Frameworks: Django</li>
     <li>Frontend Libraries: React JS, Alpine JS</li>
     <li>Styling: Tailwind CSS</li>
