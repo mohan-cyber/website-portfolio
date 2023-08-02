@@ -2,6 +2,7 @@ import React from 'react'
 import Docker from '../assets/images/docker.png'
 import Sso from '../assets/images/django-sso.png'
 import Stripe from '../assets/images/stripe.jpeg'
+import FadeInAnimation from './FadeInAnimation'
 
 
 const Portfolio = () => {
@@ -27,12 +28,15 @@ const Portfolio = () => {
     <div id="portfolio" className=' bg-gradient-to-b from-black to-gray-800 w-full text-white lg:h-screen pt-[50px] pb-[50px] lg:pt-0 lg:pb-0 '>
         <div className=' max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
            <div className='pb-8'>
+               <FadeInAnimation>
            <p className=' text-4xl font-bold inline border-b-4 border-gray-500 '>
                 Portfolio
             </p>
             <p className='py-6'> Check out some of my works here </p>
+            </FadeInAnimation>
 
            </div>
+           <FadeInAnimation>
            <div className=' grid sm:grid-cols-2 md:grid-cols-3 gap-8'>
            {
                portfolios.map(({ id, src, link}) => (
@@ -63,6 +67,7 @@ const Portfolio = () => {
            ))
         }
           </div>
+          </FadeInAnimation>
     </div>
     </div>
   )

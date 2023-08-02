@@ -12,6 +12,7 @@ import Mongodb from "../assets/images/mongodb.png"
 import Reactjs from "../assets/images/react.png"
 import Tailwind from "../assets/images/tailwind.png"
 import Typescript from "../assets/images/typescript.png"
+import FadeInAnimation from './FadeInAnimation';
 
 
 
@@ -101,22 +102,29 @@ const Experiance = () => {
     <div id="experiance" className=' w-full  bg-gradient-to-b from-gray-800 to-black pt-[50px] pb-[50px] lg:pt-0 lg:pb-0 '>
         <div className=' max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white '>
             <div>
+                <FadeInAnimation>
                 <p className=' text-4xl font-bold border-b-4 border-gray-500 p-2 inline'>Experiance</p>
                 <p className=' py-6'>These are the technoogies I've worked with</p>
+                </FadeInAnimation>
             </div>
+            <FadeInAnimation>
             <div className=' w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-8 sm:px-0'>
                 {
                     techs.map(({id, src, style,title}) =>
                     (
+                        
                         <div key={id} className={` flex flex-col justify-center items-center shadow-md hover:scale-105 duration-500 py-2 rounded-lg border-t border-gray-600 ${style}`}>
                         <img src={src} alt="" className=' w-20 mx-auto' />
                         <p className=' mt-auto'>{title}</p>
+                        
                     </div>
+                    
 
                     ))
                 }
                
             </div>
+            </FadeInAnimation>
         </div>
 
 
