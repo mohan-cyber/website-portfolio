@@ -1,5 +1,5 @@
 import {React , useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-scroll";
 import { FaTimes, FaHamburger } from "react-icons/fa";
 
@@ -56,6 +56,7 @@ const Navbar = () => {
       >
         {nav ? <FaTimes size={20} /> : <FaHamburger size={20} />}
       </div>
+      <AnimatePresence>
 
       {nav && (
         
@@ -70,6 +71,7 @@ const Navbar = () => {
             }}
             initial="closed"
             animate={nav ? "open" : "closed"}
+            exit={"closed"}
             className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gray-700 text-white"
           >
             {links.map(({ id, link }) => (
@@ -82,6 +84,7 @@ const Navbar = () => {
           </motion.ul>
       
       )}
+      </AnimatePresence>
     </div>
   );
 };
