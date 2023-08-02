@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaBars ,FaTimes } from 'react-icons/fa';
+import { FaBars ,FaTimes, FaHamburger } from 'react-icons/fa';
 import  { Link } from 'react-scroll';
 
 
@@ -46,7 +46,7 @@ const NavBar = () => {
       </ul>
       <div  onClick={() => setNav(!nav)} className="md:hidden    cursor-pointer z-10 text-white ">
      
-      {nav ?   <FaTimes size={20} /> : <FaBars size={20} /> }
+      {nav ?   <FaTimes size={20} /> : <FaHamburger size={20} /> }
       </div>
       {nav && ( <ul className="flex flex-col justify-center items-center absolute top-0  left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-white  ">
       {links.map(({id, link}) => (
