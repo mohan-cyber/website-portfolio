@@ -2,9 +2,12 @@ import { React, useState } from "react";
 import { motion, AnimatePresence, MotionConfig } from "framer-motion";
 import { Link } from "react-scroll";
 import { FaTimes, FaHamburger } from "react-icons/fa";
+import useSound from 'use-sound';
+import boopSfx from '../assets/sounds/bubble-sound.mp3';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const [play] = useSound(boopSfx);
   const links = [
     {
       id: 1,
@@ -50,7 +53,7 @@ const Navbar = () => {
       </div>
 
       <div
-        onClick={() => setNav(!nav)}
+        onClick={() => {setNav(!nav);play()}}
         className="md:hidden cursor-pointer z-10 text-white"
       >
         {nav ? <FaTimes size={20} /> : <FaHamburger size={20} />}
