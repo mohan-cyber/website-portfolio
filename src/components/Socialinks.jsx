@@ -32,7 +32,7 @@ const Socialinks = () => {
             Resume <BsFillPersonLinesFill size={30} />
             </>
         ),
-        href: '/resume.pdf',
+        href: '',
         style: 'rounder-tr-md',
         download: true, 
     }, 
