@@ -16,10 +16,7 @@ const Home = () => {
               I'm a Full Stack Developer
             </h2>
             <p className=" text-white py-4 max-w-md ">
-              I have 2.5 years of experience in my domain. My objective is to
-              obtain a challenging position in a high-quality environment where
-              my academic skills and practical expertise will add value to
-              organization.
+            Seeking a challenging position in a high-quality environment where my academic skills and practical expertise can contribute to organizational success.
             </p>
           </FadeInAnimation>
           <div>
