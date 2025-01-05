@@ -18,10 +18,10 @@ const About = () => {
 
         <FadeInAnimation>
           <p class="mb-4">
-            I am a passionate Full Stack Developer with hands-on experience in
-            building and integrating web applications. Over the years, I have
-            worked on various projects, honing my skills in both backend and
-            frontend technologies.
+Hi there 👋! I’m Mohan — a passionate Python and Full Stack Developer. 
+My goal is to secure a dynamic role where I can blend my technical expertise and creative problem-solving skills to drive meaningful impact and contribute to the growth of an organization. Let’s connect and create something amazing together!
+
+📬 Reach out to me at mohan0310selvan@gmail.com — I’d love to hear from you!
           </p>
         </FadeInAnimation>
         <FadeInAnimation>
